@@ -17,14 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Include any necessary head elements */}
-      </head>
       <body className={inter.className}>
-        {/* Render the NavBar component */}
         <NavBar />
-
-        {/* Wrap the children with the Redux Provider */}
         <Provider store={store}>
           {children}
         </Provider>

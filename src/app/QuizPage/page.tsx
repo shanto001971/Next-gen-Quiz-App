@@ -13,7 +13,7 @@ const Quiz = () => {
     const timerRef = useRef(null);
 
     const categories = ['General Knowledge', 'Science', 'History']; // Replace with actual data
-       
+
 
     useEffect(() => {
         // Fetch quiz data (categories and questions) here from your API
@@ -64,12 +64,12 @@ const Quiz = () => {
         };
     }, [timer, currentCategory, questions, currentQuestionIndex]);
 
-    const handleCategoryChange = (category) => {
+    const handleCategoryChange = (category: string) => {
         dispatch(setCategory(category));
         setTimer(60); // Reset the timer when changing the category
     };
 
-    const handleOptionSelect = (option) => {
+    const handleOptionSelect = (option: string) => {
         setSelectedOption(option);
     };
 
@@ -82,82 +82,86 @@ const Quiz = () => {
     const handleFinishQuiz = () => {
         // Calculate the user's score
         const score = calculateScore();
-      
+
         // Display the score (you can replace this with your desired way of presenting the score)
         alert(`Your Score: ${score}`);
-      
+
         // Reset the quiz state and timer
         dispatch(resetQuiz());
         setTimer(60); // Reset the timer when finishing the quiz
-      };
+    };
 
-      const calculateScore = () => {
+    const calculateScore = () => {
         // Assuming questions have a property named 'correctAnswer'
-        const correctAnswers = questions.filter((question, index) => {
-          return question.correctAnswer === userAnswers[index];
+        const correctAnswers = questions.filter((question: any, index: number) => {
+            return question.correctAnswer === userAnswers[index];
         });
-      
+
         // Calculate the score based on the number of correct answers and time remaining
         const baseScore = correctAnswers.length; // Each correct answer contributes to the score
         const timeBonus = Math.max(0, timer / 10); // Add a time bonus (adjust the divisor as needed)
-      
+
         // Total score calculation
         const totalScore = baseScore + timeBonus;
-      
+
         return totalScore;
-      };
+    };
+
+    console.log(calculateScore())
 
     return (
-        <div className="max-w-2xl mx-auto p-8 border rounded shadow-md">
-            <h2 className="text-2xl font-bold mb-4">Quiz</h2>
-            {currentCategory ? (
-                <div>
-                    <h3 className="text-xl font-bold mb-2">{currentCategory}</h3>
-                    <p className="mb-2">Question {currentQuestionIndex + 1}/{questions.length}</p>
-                    <p className="mb-2">Time left: {timer} seconds</p>
-                    {/* Add a conditional check for questions */}
-                    <p className="mb-4">{questions?.[currentQuestionIndex]?.text}</p>
+        <div className="">
+            <div className="max-w-5xl mx-auto p-8 border rounded shadow-md my-[10%]">
+                <h2 className="text-2xl font-bold mb-4">Quiz</h2>
+                {currentCategory ? (
                     <div>
-                        {questions?.[currentQuestionIndex]?.options.map((option) => (
+                        <h3 className="text-xl font-bold mb-2">{currentCategory}</h3>
+                        <p className="mb-2">Question {currentQuestionIndex + 1}/{questions.length}</p>
+                        <p className="mb-2">Time left: {timer} seconds</p>
+                        {/* Add a conditional check for questions */}
+                        <p className="mb-4">{questions?.[currentQuestionIndex]?.text}</p>
+                        <div>
+                            {questions?.[currentQuestionIndex]?.options.map((option: string) => (
+                                <button
+                                    key={option}
+                                    className={`m-2 p-4 text-lg cursor-pointer rounded-md ${selectedOption === option ? 'bg-green-500 text-white' : ''}`}
+                                    onClick={() => handleOptionSelect(option)}
+                                >
+                                    {option}
+                                </button>
+                            ))}
+                        </div>
+                        <button
+                            className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
+                            onClick={handleNextQuestion}
+                            disabled={!selectedOption || timer === 0}
+                        >
+                            Next
+                        </button>
+                        {currentQuestionIndex === questions.length - 1 && (
                             <button
-                                key={option}
-                                className={`m-2 p-4 text-lg cursor-pointer rounded-md ${selectedOption === option ? 'bg-green-500 text-white' : ''}`}
-                                onClick={() => handleOptionSelect(option)}
+                                className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
+                                onClick={handleFinishQuiz}
                             >
-                                {option}
+                                Finish
+                            </button>
+                        )}
+                    </div>
+                ) : (
+                    <div>
+                        <h3 className="text-xl font-bold mb-2">Choose a Category</h3>
+                        {categories.map((category) => (
+                            <button
+                                key={category}
+                                className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
+                                onClick={() => handleCategoryChange(category)}
+                            >
+                                {category}
                             </button>
                         ))}
                     </div>
-                    <button
-                        className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
-                        onClick={handleNextQuestion}
-                        disabled={!selectedOption || timer === 0}
-                    >
-                        Next
-                    </button>
-                    {currentQuestionIndex === questions.length - 1 && (
-                        <button
-                            className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
-                            onClick={handleFinishQuiz}
-                        >
-                            Finish
-                        </button>
-                    )}
-                </div>
-            ) : (
-                <div>
-                    <h3 className="text-xl font-bold mb-2">Choose a Category</h3>
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            className="m-2 p-4 text-lg cursor-pointer bg-blue-500 text-white"
-                            onClick={() => handleCategoryChange(category)}
-                        >
-                            {category}
-                        </button>
-                    ))}
-                </div>
-            )}
+                )}
+            </div>
         </div>
     );
 };

@@ -1,0 +1,444 @@
+[
+    {
+        "text": "What is the primary language for styling web pages?",
+        "options": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "correctAnswer": "CSS",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'viewport' meta tag in HTML?",
+        "options": [
+            "To set the background color of the webpage",
+            "To control the width and scaling of the viewport",
+            "To define a navigation link",
+            "To embed external stylesheets"
+        ],
+        "correctAnswer": "To control the width and scaling of the viewport",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "How is a CSS class selector represented in a stylesheet?",
+        "options": [
+            ".class",
+            "#class",
+            "*class",
+            "$class"
+        ],
+        "correctAnswer": ".class",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "Which HTML tag is used to create a hyperlink?",
+        "options": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<url>"
+        ],
+        "correctAnswer": "<a>",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What does 'CSS' stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets"
+        ],
+        "correctAnswer": "Cascading Style Sheets",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'alt' attribute in the 'img' tag?",
+        "options": [
+            "To define image alignment",
+            "To set image opacity",
+            "To specify alternative text for an image",
+            "To create a link to another page"
+        ],
+        "correctAnswer": "To specify alternative text for an image",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "In CSS, what does the 'box-sizing' property control?",
+        "options": [
+            "The size of a text box",
+            "The border-box model",
+            "The layout of flex containers",
+            "The box-shadow property"
+        ],
+        "correctAnswer": "The border-box model",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "Which CSS pseudo-class is used to select the first child of an element?",
+        "options": [
+            ":first",
+            ":first-child",
+            ":first-of-type",
+            ":initial"
+        ],
+        "correctAnswer": ":first-child",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'z-index' property in CSS?",
+        "options": [
+            "To control the spacing between elements",
+            "To set the font size of text",
+            "To define the stacking order of positioned elements",
+            "To specify the color of text"
+        ],
+        "correctAnswer": "To define the stacking order of positioned elements",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What is the HTML5 semantic tag for marking up a navigation menu?",
+        "options": [
+            "<nav>",
+            "<menu>",
+            "<navbar>",
+            "<ul>"
+        ],
+        "correctAnswer": "<nav>",
+        "category": "front-end-Developer"
+    },
+    {
+        "text": "What is the role of a full-stack-Developer?",
+        "options": [
+            "Designing user interfaces",
+            "Writing server-side code",
+            "Database management",
+            "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is the purpose of a SQL JOIN statement?",
+        "options": [
+            "To concatenate strings",
+            "To combine rows from two or more tables based on a related column",
+            "To create a new table",
+            "To filter data using a specified condition"
+        ],
+        "correctAnswer": "To combine rows from two or more tables based on a related column",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is the purpose of a Docker container?",
+        "options": [
+            "To store and manage database records",
+            "To package and distribute applications with their dependencies",
+            "To create interactive user interfaces",
+            "To generate random numbers"
+        ],
+        "correctAnswer": "To package and distribute applications with their dependencies",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "How does HTTP differ from HTTPS?",
+        "options": [
+            "HTTP uses a secure connection, and HTTPS does not",
+            "HTTPS uses a secure connection, and HTTP does not",
+            "They are the same, and the terms are interchangeable",
+            "There is no difference between HTTP and HTTPS"
+        ],
+        "correctAnswer": "HTTPS uses a secure connection, and HTTP does not",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'await' keyword in JavaScript?",
+        "options": [
+            "To create a delay in execution",
+            "To make a function asynchronous",
+            "To throw an exception",
+            "To define a loop"
+        ],
+        "correctAnswer": "To make a function asynchronous",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'window.localStorage' object in web development?",
+        "options": [
+            "To store session-specific data",
+            "To cache images for faster loading",
+            "To manage the browser's history",
+            "To persistently store key-value pairs on the client-side"
+        ],
+        "correctAnswer": "To persistently store key-value pairs on the client-side",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "In web development, what is the purpose of the 'viewport' meta tag?",
+        "options": [
+            "To set the background color of the webpage",
+            "To control the width and scaling of the viewport",
+            "To define a navigation link",
+            "To embed external stylesheets"
+        ],
+        "correctAnswer": "To control the width and scaling of the viewport",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'useEffect' hook in React?",
+        "options": [
+            "To manage component state",
+            "To handle user input events",
+            "To perform side effects in functional components",
+            "To create reusable components"
+        ],
+        "correctAnswer": "To perform side effects in functional components",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "Which of the following is a NoSQL database?",
+        "options": [
+            "MySQL",
+            "MongoDB",
+            "PostgreSQL",
+            "SQLite"
+        ],
+        "correctAnswer": "MongoDB",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What does the acronym 'MERN' stack stand for in web development?",
+        "options": [
+            "MongoDB, Express.js, React, Node.js",
+            "MySQL, Express.js, React, Node.js",
+            "MongoDB, Angular, React, Node.js",
+            "MySQL, Angular, React, Node.js"
+        ],
+        "correctAnswer": "MongoDB, Express.js, React, Node.js",
+        "category": "full-stack-Developer"
+    },
+    {
+        "text": "What is JSX in React?",
+        "options": [
+            "JavaScript XML",
+            "JavaScript Extension",
+            "JavaScript Syntax",
+            "Java XML"
+        ],
+        "correctAnswer": "JavaScript XML",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "In React, what is the purpose of the 'useState' hook?",
+        "options": [
+            "To fetch data from an API",
+            "To manage and update component state",
+            "To handle user authentication",
+            "To create a reusable component"
+        ],
+        "correctAnswer": "To manage and update component state",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "In React, what is the purpose of the 'useEffect' hook?",
+        "options": [
+            "To manage component state",
+            "To handle user input events",
+            "To perform side effects in functional components",
+            "To create reusable components"
+        ],
+        "correctAnswer": "To perform side effects in functional components",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "What is the significance of the 'props' object in React?",
+        "options": [
+            "To handle asynchronous operations",
+            "To manage local component state",
+            "To pass data from a parent component to a child component",
+            "To define CSS styles for a component"
+        ],
+        "correctAnswer": "To pass data from a parent component to a child component",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "In React, what is the purpose of the 'key' attribute when rendering a list of components?",
+        "options": [
+            "To define a unique identifier for each component",
+            "To set the font size of text",
+            "To determine the order of the components",
+            "To apply conditional styling"
+        ],
+        "correctAnswer": "To define a unique identifier for each component",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "What is a React component?",
+        "options": [
+            "A reusable piece of code that renders UI elements",
+            "A function that performs server-side operations",
+            "A database table in MongoDB",
+            "A keyword used in JavaScript"
+        ],
+        "correctAnswer": "A reusable piece of code that renders UI elements",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'setState' method in a React class component?",
+        "options": [
+            "To update the component's state and trigger a re-render",
+            "To create a new component instance",
+            "To define the component's initial state",
+            "To import external libraries"
+        ],
+        "correctAnswer": "To update the component's state and trigger a re-render",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "In React, what is a controlled component?",
+        "options": [
+            "A component that is managed by Redux",
+            "A component that updates its own state directly",
+            "A component that relies on external APIs for state management",
+            "A component whose state is controlled by React through its props"
+        ],
+        "correctAnswer": "A component whose state is controlled by React through its props",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "What is the purpose of the 'useContext' hook in React?",
+        "options": [
+            "To create a context provider",
+            "To consume values from a React context",
+            "To handle user authentication",
+            "To manage and update component state"
+        ],
+        "correctAnswer": "To consume values from a React context",
+        "category": "React.js-Developer"
+    },
+    {
+        "text": "What is the 'state' in React?",
+        "options": [
+            "A built-in JavaScript object",
+            "A function that returns JSX",
+            "A mechanism for managing component data",
+            "An external library for managing state"
+        ],
+        "correctAnswer": "A mechanism for managing component data",
+        "category": "React.js-Developer"
+    },
+    [
+        {
+            "text": "What is the purpose of the 'let' keyword in JavaScript?",
+            "options": [
+                "To declare a variable with block scope",
+                "To declare a variable with function scope",
+                "To declare a constant variable",
+                "To define a new function"
+            ],
+            "correctAnswer": "To declare a variable with block scope",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "How can you check the type of a variable in JavaScript?",
+            "options": [
+                "Using the 'typeof' operator",
+                "Using the 'type' method",
+                "Using the 'checkType' function",
+                "Using the 'typeOf' property"
+            ],
+            "correctAnswer": "Using the 'typeof' operator",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is the purpose of the 'map' function in JavaScript?",
+            "options": [
+                "To create a new array with the results of calling a provided function on every element in the array",
+                "To filter elements in an array based on a specified condition",
+                "To reduce an array to a single value",
+                "To sort the elements of an array"
+            ],
+            "correctAnswer": "To create a new array with the results of calling a provided function on every element in the array",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What does the term 'hoisting' refer to in JavaScript?",
+            "options": [
+                "The process of moving a function declaration to the top of the file",
+                "The process of moving variable declarations to the top of their containing scope",
+                "The process of compressing JavaScript files",
+                "The process of declaring multiple variables in a single line"
+            ],
+            "correctAnswer": "The process of moving variable declarations to the top of their containing scope",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is a closure in JavaScript?",
+            "options": [
+                "A way to create private variables in a function",
+                "The process of closing a JavaScript file",
+                "A method for handling errors in asynchronous code",
+                "A combination of a function and the lexical environment within which that function was declared"
+            ],
+            "correctAnswer": "A combination of a function and the lexical environment within which that function was declared",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is the purpose of the 'JSON.parse' method in JavaScript?",
+            "options": [
+                "To convert a JavaScript object to a JSON string",
+                "To parse a JSON string and return a JavaScript object",
+                "To validate the syntax of a JavaScript object",
+                "To create a new JSON object"
+            ],
+            "correctAnswer": "To parse a JSON string and return a JavaScript object",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is the difference between '==' and '===' in JavaScript?",
+            "options": [
+                "'==' performs type coercion, while '===' does not",
+                "'===' performs type coercion, while '==' does not",
+                "'==' is the strict equality operator, while '===' is the loose equality operator",
+                "'===' is the strict equality operator, while '==' is the loose equality operator"
+            ],
+            "correctAnswer": "'===' is the strict equality operator, while '==' is the loose equality operator",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is the purpose of the 'async' keyword in JavaScript?",
+            "options": [
+                "To define a new asynchronous function",
+                "To handle errors in synchronous code",
+                "To create an infinite loop",
+                "To declare a constant variable"
+            ],
+            "correctAnswer": "To define a new asynchronous function",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "What is the purpose of the 'this' keyword in JavaScript?",
+            "options": [
+                "To refer to the current object in a method",
+                "To create a new instance of a class",
+                "To access the previous value of a variable",
+                "To declare a function"
+            ],
+            "correctAnswer": "To refer to the current object in a method",
+            "category": "JavaScript-Developer"
+        },
+        {
+            "text": "How can you prevent the default behavior of an event in JavaScript?",
+            "options": [
+                "Using the 'stopPropagation' method",
+                "Using the 'preventDefault' method",
+                "Using the 'return false' statement",
+                "Using the 'cancelEvent' function"
+            ],
+            "correctAnswer": "Using the 'preventDefault' method",
+            "category": "JavaScript-Developer"
+        }
+    ]
+]

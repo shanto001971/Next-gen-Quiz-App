@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Quiz from '@/app/QuizPage/Quiz'
+import Quiz from '@/app/QuizPage/page'
 import RulesAndSteps from '@/app/RoulsAndSteps/RulesAndSteps'
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="">
         <RulesAndSteps/>
+        {/* <Quiz/> */}
       </div>
     </main>
   )
