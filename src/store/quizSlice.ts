@@ -21,6 +21,19 @@ const initialState: QuizState = {
   userAnswers: [],
 };
 
+interface QuizState {
+  currentCategory: string;
+  questions: Question[];
+  currentQuestionIndex: number;
+  userAnswers: string[];
+  // Add other properties specific to your quiz state
+}
+
+interface RootState {
+  quiz: QuizState;
+  // Add other slices if you have more in your root state
+}
+
 const quizSlice = createSlice({
   name: 'quiz',
   initialState,
@@ -44,5 +57,5 @@ const quizSlice = createSlice({
   },
 });
 
-export const { setCategory, setQuestions, submitAnswer, resetQuiz } = quizSlice.actions;
+export const { setCategory, setQuestions, submitAnswer, resetQuiz,RootState } = quizSlice.actions;
 export default quizSlice.reducer;
